@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mood</title>
+    <% include ./partials/header.ejs %>
+</head>
+<body>
+    <div class="container">
+        <div id="framediv" class="p-4">
+            <img src="/loading.gif" height="250" style="margin-top: 100px; margin-bottom: 20px">
+            <h2 class="p-4 text-white">Initializing</h2>   
+        </div>
+        <div id="outerdiv">
+            <% include ./partials/predictions.ejs %>
+        </div>
+        
+    </div>
+    <script src="js/mood.js"></script>
+</body>
+</html>

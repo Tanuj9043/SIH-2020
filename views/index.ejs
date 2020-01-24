@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <% include ./partials/header.ejs %>
+</head>
+<body>
+    <div class="container py-4" id="outerdiv">
+        <h1 class="display-3 text-light mt-5 mb-5" style="color:black !important">Attention!!!</h1>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <form class="my-4" action="/video" method="POST">
+                    <h2 class="py-1 text-light">YouTube Video</h2>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Youtube URL" name="videoLink">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success">Start</button>
+                    </div>
+                </form>
+                
+                <form class="my-4" action="/localVideo" method="POST" enctype="multipart/form-data">
+                    <h2 class="py-1 text-light">Local Video</h2>
+                    <div class="form-group">
+                        <input class="form-control" type="file" name="local">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success">Start</button>
+                    </div>
+                </form>
+                <!-- <h2 class="py-3"><a href="/mood" class="text-light">Mood Detection (without video)</a></h2>                 -->
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+</body>
+</html>

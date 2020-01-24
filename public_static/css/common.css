@@ -1,0 +1,12 @@
+body {
+    background-color: #9b82e0
+}
+
+div.form-group, div.container, h2, h1 {
+    text-align: center
+}
+
+h1.display-3 {
+    margin-bottom: 40px;
+    font-family: 'BioRhyme Expanded'
+}

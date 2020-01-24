@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Video</title>
+    <% include ./partials/header.ejs %>
+</head>
+<body>
+    <div class="container">
+        <div class="pt-4 pb-2">
+            <iframe id="video" class="youtube-video" width="800" height="450" src=" <%= url%> " frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="outerdiv">
+            <% include ./partials/playpause.ejs %>
+            <% include ./partials/predictions.ejs %>
+        </div>
+
+    </div>
+    <script src="js/video.js"></script>
+</body>
+</html>

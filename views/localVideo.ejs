@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Local Video</title>
+    <% include ./partials/header.ejs %>
+</head>
+<body>
+    <div class="container">
+        <div class="pt-4 pb-2">
+            <video id="video" width="800" height="450" controls>
+                <source src="/uploads/<%= url%>" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="outerdiv">
+            <% include ./partials/playpause.ejs %>
+            <% include ./partials/predictions.ejs %>
+        </div>
+
+    </div>
+    <script src="js/localVideo.js"></script>
+</body>
+</html>
